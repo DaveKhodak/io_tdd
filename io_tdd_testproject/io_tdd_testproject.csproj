@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\io_tdd_cl\io_tdd_cl.csproj" />
+  </ItemGroup>
+
 </Project>
