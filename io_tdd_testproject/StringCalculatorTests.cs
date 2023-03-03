@@ -2,10 +2,10 @@ using io_tdd_cl;
 
 namespace io_tdd_testproject
 {
-    public class EmptyStringZeroTest
+    public class StringCalculatorTests
     {
         StringCalculator calculator;
-        public EmptyStringZeroTest()
+        public StringCalculatorTests()
         {
             calculator = new StringCalculator();
         }
