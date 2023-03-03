@@ -12,8 +12,10 @@ namespace io_tdd_cl
         {
             if (numbers == "")
                 return 0;
+
             int sum = 0;
-            string[] nums = numbers.Split(',');
+
+            string[] nums = numbers.Split(',', '\n');
             foreach(var num in nums)
             {
                 sum += int.Parse(num);
