@@ -18,7 +18,9 @@ namespace io_tdd_cl
             string[] nums = numbers.Split(',', '\n');
             foreach(var num in nums)
             {
-                sum += int.Parse(num);
+                int intNum = int.Parse(num);
+                if(intNum <= 1000)
+                    sum += intNum;
             }
             return sum;
         }

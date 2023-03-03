@@ -76,5 +76,15 @@ namespace io_tdd_testproject
                 Assert.Equal(expected, e);
             }
         }
+
+        [Theory]
+        [InlineData("1\n2,1001", 3)]
+        [InlineData("3\n5,10000", 8)]
+        public void WhenGreaterThan1000Provided_ItShouldReturnSumWithoutThisNumber(string input, int expected)
+        {
+            int result = calculator.Add(input);
+
+            Assert.Equal(expected, result);
+        }
     }
 }
