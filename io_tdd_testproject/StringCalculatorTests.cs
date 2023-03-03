@@ -19,5 +19,15 @@ namespace io_tdd_testproject
 
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [InlineData("2", 2)]
+        [InlineData("10", 10)]
+        public void WhenSingleNumberProvided_ItShouldReturnThisNumber(string input, int expected)
+        {
+            int result = calculator.Add(input);
+
+            Assert.Equal(expected, result);
+        }
     }
 }
