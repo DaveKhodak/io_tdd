@@ -29,5 +29,15 @@ namespace io_tdd_testproject
 
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [InlineData("2, 10", 12)]
+        [InlineData("3,5", 8)]
+        public void WhenTwoNumberCommaSeparatedProvided_ItShouldReturnSumOfTheseNumbers(string input, int expected)
+        {
+            int result = calculator.Add(input);
+
+            Assert.Equal(expected, result);
+        }
     }
 }
